@@ -1,0 +1,870 @@
+/* ------- POPPINS ------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ------- VARIABLES ------- */
+:root {
+    --body-color: #1E3E62;
+    --color-white: rgb(255, 255, 255);
+    
+    --text-color-second: #FFFFFF;
+    --text-color-third: #ffde4c;
+
+    --first-color: #54473F;
+    --first-color-hover: rgb(40, 91, 212);
+
+    --second-color: rgb(0, 201, 255);
+    --third-color: #BC7C7C;
+    --first-shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+/* ------- BASE ------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+body {
+    color: #fff;
+    display: flex;
+    background: var(--body-color);
+    
+}
+
+
+/* ------- SMOOTH SCROLL ------- */
+html{
+    scroll-behavior: smooth;
+}
+
+/* ------- CHANGE THE SCROLL BAR DESIGN ------- */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
+}
+
+/* ------- GLOBAL BUTTON DESIGN ------- */
+.btn{
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+.btn>i{
+   
+    
+}
+
+/* ------- GLOBAL ICONS DESIGN ------- */
+i{
+    font-size: 16px; 
+}
+
+/* ------- BASE ------- */
+body{
+    
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+
+/* ------- NAVIGATION BAR ------- */
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    background: var(--body-color);
+    padding-inline: 9vw;
+    transition: .3s;
+    z-index: 100;
+}
+.nav-logo{
+    position: relative;
+}
+.nav-name{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-color-third);
+}
+.nav-logo span{
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    font-size: 5em;
+    color: var(--text-color-second);
+}
+.nav-menu, .nav-menu-list{
+    display: flex;
+}
+.nav-menu .nav-list{
+    list-style: none;
+    position: relative;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 500;
+    padding-inline: 15px;
+    margin-inline: 20px;
+}
+.nav-menu-btn{
+    display: none;
+}
+.nav-menu-btn i{
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+/* ------- WRAPPER DESIGN------- */
+.wrapper{
+   padding-inline: 10vw;
+    
+}
+
+
+/* ------- FEATURED BOX ------- */
+.featured-box{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+    
+}
+
+/* ------- FEATURED BOX ------- */
+.featured-text{
+    position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
+}
+.featured-text-card span{
+    background: var(--third-color);
+    color: var(--color-white);
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.featured-name{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-block: 20px;
+}
+.typedText{
+    text-transform: capitalize;
+    color: var(--text-color-third);
+}
+.featured-text-info{
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: var(--text-color-second);
+}
+.featured-text-btn{
+    display: flex;
+    gap: 20px;
+}
+.featured-text-btn>.btn:hover{
+    background: var(--first-color-hover);
+}
+.featured-text-btn>.blue-btn{
+    background: var(--first-color);
+    color: var(--color-white);
+}
+.featured-text-btn>.blue-btn:hover{
+    background: var(--first-color-hover);
+}
+.social-icons{
+    display: flex;
+    margin-top: 2em;
+    gap: 30px;
+}
+.social-icons a {
+    color: white; /* Mengatur warna link menjadi putih */
+    text-decoration: none; /* Menghilangkan garis bawah jika ada */
+}
+.icon-insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.icon-wa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.icon-insta:hover{
+    color: #E1306C; 
+}
+.icon-wa:hover{
+    color: #25D366; 
+}
+.icon-insta i, .icon-wa i {
+    font-size: 20px; 
+    
+}
+
+
+/* ------- FEATURED IMAGE BOX ------- */
+.featured-image{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    min-height: 80vh;
+    width: 50%;
+}
+.image{
+    margin: auto 0;
+    width: 370px;
+    height: 310px;
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: imgfloat 5s ease-in-out infinite;
+}
+.image img{
+    width: 380px;
+    object-fit: cover;
+}
+@keyframes imgfloat{
+    50%{
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+.scroll-btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--text-color-second);
+    background: var(--color-white);
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.scroll-btn i{
+    font-size: 20px;
+}
+
+/* ------- MAIN BOX ------- */
+.section{
+    padding-block: 5em;
+}
+.row{
+    display: flex;
+    justify-content: space-beetwen;
+    width: 100%;
+    gap: 50px;
+}
+.col{
+    display: flex;
+    width: 50%;
+}
+
+/* ------- RESUABLE CSS ------- */
+.top-header{
+    text-align: center;
+    margin-bottom: 5em;
+
+}
+.top-header h1{
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 10px;
+}
+.top-header span{
+    color: #999;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 15px;
+}
+
+/* ------- BERITA SLIDE ------- */
+
+.section-news {
+    margin-top: 200px;
+    padding: 20px;
+    background-color: #2b2b3d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+#berita {
+    scroll-margin-top: 200px; /* Sesuaikan dengan tinggi header */
+    
+}
+.container-topup-news {
+    overflow-x: auto; /* Mengaktifkan scroll horizontal */
+    display: flex;
+    
+    
+}
+
+.container-img-news {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    padding: 20px 0;
+}
+
+/* Setiap elemen gambar */
+.img-news {
+    flex: 0 0 auto; /* Membuat elemen gambar tidak menyusut */
+    scroll-snap-align: start; /* Menyelaraskan setiap gambar di awal */
+}
+
+.img-news img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efek pop-in saat gambar di-hover */
+.img-news img:hover {
+    transform: scale(1.1); /* Membesarkan gambar sedikit */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+/* Hilangkan scrollbar di browser modern */
+.container-topup-news::-webkit-scrollbar {
+    display: none;
+}
+
+.container-topup-news {
+    -ms-overflow-style: none;  /* Hilangkan scrollbar di IE */
+    scrollbar-width: none; /* Hilangkan scrollbar di Firefox */
+}
+.video-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Scroll snap untuk pengalaman scroll lebih baik */
+    padding: 10px;
+}
+
+/* Setiap video memiliki scroll snap */
+.video-container iframe {
+    flex: 0 0 auto; /* Membuat elemen iframe tidak mengecil */
+    width: 560px;
+    height: 315px;
+    scroll-snap-align: start; /* Setiap video berhenti di awal viewport */
+    border-radius: 8px;
+}
+
+/* Styling tambahan untuk scroll bar */
+.video-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.video-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.video-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* ------- ABOUT TOPUP ------- */
+#topup{
+    scroll-margin-top: 150px;
+}
+.section-about-topup {
+    margin-top: 150px;
+    padding: 20px;
+    background: linear-gradient(135deg, #2b2b3d, #1f1f2b);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-topup {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Menambahkan fleksibilitas */
+    gap: 25px;
+    position: relative;
+}
+
+.img-edit img {
+    width: 180px;
+    border-radius: 20px;   
+    transition: transform 0.3s ease, border 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk kedalaman */
+}
+
+.img-edit img:hover {
+    border: 2px solid #ff4757; /* Mengubah warna border saat hover */
+    filter: blur(2px);
+    transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+.img-edit:hover {
+    transform: scale(1.05); /* Sedikit membesar pada hover div */
+    transition: transform 0.4s ease;
+}
+
+.image-topup-2 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+.img-edit:hover img {
+    animation: shake 0.3s; /* Menambahkan efek goyang saat hover */
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0); }
+}
+
+
+/* ------- FORM MOBILE LEGENDS ------- */
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #2b2b3d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #FFFFFF;
+    background-color: #54473F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #6b5b52;
+}
+
+.topup-wrapper {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color: #55473F;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+}
+.topup-wrapper-valo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #55473F;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+}
+.topup-wrapper-pubg {
+    margin-top: 200px;
+    margin-bottom: 120px;
+    background-color: #55473F;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+}
+.topup-image {
+    margin-right: 160px;
+}
+
+.topup-image img {
+    display: flex;
+    margin-top: 220px;
+    border-radius: 8px;
+}
+
+.topup-container {
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    flex-grow: 1;
+}
+
+.section-topup {
+    margin-bottom: 20px;
+}
+
+.section-topup h2 {
+    font-size: 1.2em;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.input-group input[type="text"],
+.section-topup select,
+#whatsapp {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #55473F;
+    background-color: #f9f9f9;
+}
+
+.section-topup label {
+    font-size: 1em;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section-topup p {
+    font-size: 0.9em;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+/* ------- RIWAYAT TOPUP ------- */
+.container-riwayat {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 350px;
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.topup-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #4CAF50; /* Warna indikator */
+    transition: transform 0.2s ease;
+}
+
+.topup-card:hover {
+    transform: scale(1.02);
+}
+
+.game-info h2 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.game-info p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.date-status p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.status-completed {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #FF9800;
+    font-weight: bold;
+}
+
+
+/* ------- MEDIA QUERY == 900px / RESPONSIVE ------- */
+@media only screen and (max-width: 900px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        left: 0;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,0.7);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition: .3s;
+    }
+    .nav-menu-list{
+        flex-direction: column;
+    }
+    .nav-menu-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .featured-box{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .featured-text{
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 60vh;
+    }
+    .social-icons{
+        margin-top: 2em;
+    }
+    .social-icons a {
+        color: white;
+        text-decoration: none; 
+    }
+    .featured-image{
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: 65px;
+    }
+    .image, .image img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+/* ------- MEDIA QUERY == 540px / RESPONSIVE ------- */
+
+
+
+
+
+
+/* ------- footer ------- */
+.footer {
+    margin-top: 200px;
+    background-color: #1e1e2d;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  .footer-section h3 {
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .footer-section a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  .footer-section ul li a:hover {
+    color: #fff;
+  }
+  .social-icons img,
+  .payment-methods img {
+    width: 24px;
+    margin: 0 8px;
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+  }
+
+.container-body-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container-card-login {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Center vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 900px; /* Set width sesuai kebutuhan */
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-login img {
+    width: 400px; /* Sesuaikan ukuran gambar */
+    height: auto;
+    margin-bottom: 0; /* Menghapus margin bawah agar lebih rapat */
+}
+
+.text-login h2 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.signup-form {
+    width: 100%;
+}
+
+.signup-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
